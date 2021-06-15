@@ -15,7 +15,7 @@ for i in range(m):
  q.append(a)
 
 while q:
-  n=q.pop(0)
+  n=q.popleft()
   for i in relation[n]:
     if i != a and ch[i]==0:
       ch[i]=ch[n]+1
