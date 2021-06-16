@@ -12,7 +12,7 @@ input = sys.stdin.readline
 
 m,n = map(int, input().split())
 data={}
-key=[]
+key=[]   # 1로 표시된 찾아야 할 값
 num=0
 for i in range(m):
     temp=(list(map(int, input().split())))
