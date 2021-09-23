@@ -21,13 +21,16 @@ for i in range(m):
     relation[y].append(x)
 
     q.append(a)
-
+print(relation)
 while q:
     n=q.popleft()
     for i in relation[n]:
         if i != a and ch[i]==0:
             ch[i]=ch[n]+1
             q.append(i)
+            print(q)
+            print(n)
+            print(i)
 if ch[b]==0:
     print(-1)
 else:
